@@ -1,0 +1,10 @@
+alter table employee_payroll add basic_pay char(12) after gender;
+select * from employee_payroll;
+alter table employee_payroll add deductions double after basic_pay;
+select * from employee_payroll;
+alter table employee_payroll add taxable_pay double after deductions;
+select * from employee_payroll;
+alter table employee_payroll add tax double after taxable_pay;
+select * from employee_payroll;
+alter table employee_payroll add net_pay double after tax;
+select * from employee_payroll;
